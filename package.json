@@ -1,0 +1,32 @@
+{
+  "name": "expo-widgets-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "prebuild:ios": "EXPO_NO_CACHE=true EXPO_NO_GIT_STATUS=true expo prebuild -p ios --clean",
+    "prebuild:android": "set EXPO_NO_CACHE=true&&set EXPO_NO_GIT_STATUS=true&&expo prebuild -p android --clean"
+  },
+  "dependencies": {
+    "@bittingz/expo-widgets": "^0.5.53",
+    "expo": "~49.0.8",
+    "expo-dev-client": "~2.4.8",
+    "expo-splash-screen": "~0.20.5",
+    "expo-status-bar": "~1.6.0",
+    "react": "18.2.0",
+    "react-native": "0.72.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.2.14",
+    "typescript": "^5.1.3",
+    "xcode": "^3.0.1"
+  },
+  "private": false,
+  "expo": {
+    "autolinking": {
+      "nativeModulesDir": ".."
+    }
+  }
+}
