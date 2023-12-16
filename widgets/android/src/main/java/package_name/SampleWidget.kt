@@ -1,4 +1,4 @@
-package expo.modules.widgets.example;
+package com.dummy-widget.app;
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider

@@ -16,14 +16,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "expo.modules.widgets.example"
+      "bundleIdentifier": "com.dummy-widget.app",
+      "entitlements": {
+        "com.apple.security.application-groups": ["group.com.dummy-widget.app.expowidgets"]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "expo.modules.widgets.example"
+      "package": "com.dummy-widget.app"
     },
     "plugins": [
       [
@@ -43,7 +46,6 @@
       ]
     ],
     "extra": {
-      "projectId": "198071ab-2ac3-4c30-b45a-d6f3ba4d7983",
       "eas": {
         "build": {
           "experimental": {
@@ -51,10 +53,10 @@
               "appExtensions": [
                 {
                   "targetName": "expowidgetsWidgetExtension",
-                  "bundleIdentifier": "expo.modules.widgets.example.expowidgetsWidgetExtension",
+                  "bundleIdentifier": "com.dummy-widget.app.expowidgetsWidgetExtension",
                   "entitlements": {
                     "com.apple.security.application-groups": [
-                      "group.expo.modules.widgets.example.expowidgets"
+                      "group.com.dummy-widget.app.expowidgets"
                     ],
                     "aps-environment": "development"
                   }
@@ -63,7 +65,7 @@
             }
           }
         },
-        "projectId": "198071ab-2ac3-4c30-b45a-d6f3ba4d7983"
+        "projectId": "1fd056b1-ac61-4691-b013-860a549d5ce6"
       }
     }
   }

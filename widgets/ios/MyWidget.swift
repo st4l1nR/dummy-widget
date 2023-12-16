@@ -2,7 +2,7 @@ import WidgetKit
 import SwiftUI
 
 func getEntry() -> SimpleEntry {
-    let widgetSuite = UserDefaults(suiteName: "group.expo.modules.widgets.example.expowidgets")
+    let widgetSuite = UserDefaults(suiteName: "group.com.dummy-widget.app.expowidgets")
 
     if let data = widgetSuite?.data(forKey: "MyData") {
         do {

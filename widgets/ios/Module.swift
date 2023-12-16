@@ -25,7 +25,7 @@ public class ExpoWidgetsModule: Module {
               // you MUST use a suite name of the format group.{your project bundle id}.expowidgets
               let encoder = JSONEncoder()
               let data = try encoder.encode(myData)
-              let widgetSuite = UserDefaults(suiteName: "group.expo.modules.widgets.example.expowidgets")
+              let widgetSuite = UserDefaults(suiteName: "group.com.dummy-widget.app.expowidgets")
               widgetSuite?.set(data, forKey: "MyData")
               logger.info("Encoded data saved to key MyData")
 
